@@ -138,17 +138,15 @@ background-color: #ED4245;
             var fare1 = Number(document.getElementById('from').value);
             var fare2 = Number(document.getElementById('to').value);
             var discount = Number(document.getElementById('discount').value);
-
-
             var totalFare = fare1 + fare2;
             var discountedFare = totalFare * discount;
 
 if (fare1 === fare2) {
-                alert("Please select valid stations.");
+                alert("Please select valid a station and destination.");
                 return;
             }
 
-            alert("Your final fare is PHP " + discountedFare.toFixed(2));
+            alert("Your final fare is ₱" + discountedFare.toFixed(2));
         }
     </script>
 </div>
