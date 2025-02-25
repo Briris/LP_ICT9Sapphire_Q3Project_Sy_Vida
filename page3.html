@@ -19,8 +19,13 @@
 	h2 {background-color: black;
 		color: #C09C7B;
 		text-align: center;}
-	.desc {color: #C09C7B;}
-	.form {color: black;}
+		kbd {color: #C09C7B;
+		backdrop-filter: sepia(30%);
+		background-color: black;
+		font-size: 20px}
+.desc {color: #C09C7B;
+		backdrop-filter: sepia(30%);
+		background-color: white;}	.form {color: black;}
 	details {background-color: white;}
 
 
@@ -59,18 +64,18 @@
 <hr>
 
 <div class="form">
-	<label>Feedback</label>
+	<label><kbd>Feedback</kbd></label>
 	<textarea class="form-control" rows="3" id="comment" placeholder="Type here ..."></textarea>
 <br>
 <br>
 		<div class="row">
 			<div class="col">
-	<label>Name</label>
+	<label><kbd>Name</kbd></label>
 	<input type="text" class="form-control" id="user" placeholder="Type here ...">
 			</div>
 
 			<div class="col">
-	<label>Email</label>
+	<label><kbd>Email</kbd></label>
 	<input type="text" class="form-control" id="user" placeholder="Type here ...">
 			</div>
 		</div>
